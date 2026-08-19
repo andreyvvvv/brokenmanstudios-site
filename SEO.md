@@ -58,6 +58,23 @@ Last updated: 2026-08-19.
   `/.well-known/assetlinks.json` on this site (SSH deploy, same as any
   other file here), then click "Установить связь с сайтом".
 
+## Verification pass (2026-08-20)
+
+- **PageSpeed Insights (mobile), brokenmanstudios.com:** Performance 100,
+  Accessibility 97 → 100 after the fix below, Best Practices 100, SEO 100.
+- Only accessibility finding: "Document doesn't have a `main` landmark" on
+  both pages. Fixed by wrapping page content in `<main>` — deployed.
+- **Rich Results Test:** `MobileApplication` structured data detected,
+  0 errors. One optional-field notice: missing `aggregateRating`. Do not
+  add a fabricated rating — QuiltMath is still in closed testing with no
+  public Play Store reviews yet. Revisit once real ratings exist.
+- `FAQPage` JSON-LD did not show up as a separate eligible type in the
+  Rich Results Test. Google restricted FAQ rich results to
+  government/health sites in an August 2023 policy change, so a visible
+  FAQ snippet in search results is unlikely regardless of markup
+  correctness. The schema is still valid and harmless to keep (helps
+  Google's semantic understanding of the page even without a rich result).
+
 ## Open / next
 
 - Google Ads account — set up for free (targeting/keyword research only,
