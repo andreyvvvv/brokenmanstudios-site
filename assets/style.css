@@ -187,6 +187,7 @@ h1 {
 .hero-shot img {
   width: 100%;
   max-width: 260px;
+  height: auto;
   border-radius: 22px;
   box-shadow: var(--shadow);
   border: 1px solid var(--line);
@@ -346,6 +347,7 @@ section.alt .about-card { background: var(--bg); }
 
 .shot-scroll img {
   width: 200px;
+  height: auto;
   border-radius: 18px;
   border: 1px solid var(--line);
   box-shadow: var(--shadow);
