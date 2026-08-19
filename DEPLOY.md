@@ -6,11 +6,27 @@ It's just HTML, CSS, and images.
 ## Files
 
 ```
-index.html            — homepage
-privacy.html           — privacy policy page
-assets/style.css       — all styling
-assets/screenshots/    — the 5 app screenshots
+index.html                        — homepage
+privacy.html                      — privacy policy page
+robots.txt                        — crawl directives, points to sitemap.xml
+sitemap.xml                       — lists index.html and privacy.html
+google851ba87864f359aa.html       — Search Console ownership file, must stay published
+assets/style.css                  — all styling (linked with a ?v= cache-busting query)
+assets/screenshots/                — the 5 app screenshots, PNG + WebP (<picture> with WebP source, PNG fallback)
 ```
+
+## Cache-busting after a CSS change
+
+`assets/style.css` is served by nginx with `cache-control: max-age=604800` (7 days).
+Editing the file in place will not reach visitors who already cached the old
+version. After every CSS change, bump the query string on both HTML pages:
+
+```html
+<link rel="stylesheet" href="assets/style.css?v=3" />
+```
+
+(increment the number each time). `index.html`/`privacy.html` themselves are not
+sent with a long `cache-control`, so the new link is picked up on next load.
 
 ## Quick deploy with Nginx (typical VPS)
 
