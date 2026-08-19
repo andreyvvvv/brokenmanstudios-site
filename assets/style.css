@@ -174,6 +174,12 @@ h1 {
   justify-content: center;
 }
 
+.hero-shot picture {
+  width: 100%;
+  max-width: 260px;
+  display: block;
+}
+
 .hero-shot img {
   width: 100%;
   max-width: 260px;
@@ -287,10 +293,15 @@ section.alt .about-card { background: var(--bg); }
   scroll-snap-type: x mandatory;
 }
 
-.shot-scroll img {
+.shot-scroll picture {
   scroll-snap-align: start;
   width: 200px;
   flex-shrink: 0;
+  display: block;
+}
+
+.shot-scroll img {
+  width: 200px;
   border-radius: 18px;
   border: 1px solid var(--line);
   box-shadow: var(--shadow);

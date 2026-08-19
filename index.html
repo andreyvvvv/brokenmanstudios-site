@@ -38,11 +38,23 @@
     "name": "Broken Man Studios",
     "url": "https://brokenmanstudios.com/"
   },
-  "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "USD"
-  }
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "QuiltMath (free)",
+      "price": "0",
+      "priceCurrency": "USD",
+      "category": "free"
+    },
+    {
+      "@type": "Offer",
+      "name": "QuiltMath Premium (one-time unlock)",
+      "price": "2.99",
+      "priceCurrency": "EUR",
+      "category": "paid",
+      "description": "Optional one-time in-app purchase. Not a subscription. Unlocks borders & sashing, flying geese, quarter-square triangles, continuous bias binding, saved projects and printable PDF cutting sheets."
+    }
+  ]
 }
 </script>
 </head>
@@ -79,7 +91,10 @@
       </div>
     </div>
     <div class="hero-shot">
-      <img src="assets/screenshots/01-binding.png" alt="QuiltMath binding calculator screenshot" width="1080" height="1920" />
+      <picture>
+        <source srcset="assets/screenshots/01-binding.webp" type="image/webp" />
+        <img src="assets/screenshots/01-binding.png" alt="QuiltMath binding calculator screenshot" width="1080" height="1920" />
+      </picture>
     </div>
   </div>
 </section>
@@ -161,11 +176,26 @@
     <h2>Screenshots</h2>
     <p class="section-lead">A look at the calculators, from binding to the Premium PDF export.</p>
     <div class="shot-scroll">
-      <img src="assets/screenshots/01-binding.png" alt="Binding calculator" width="1080" height="1920" loading="lazy" />
-      <img src="assets/screenshots/02-backing.png" alt="Backing calculator" width="1080" height="1920" loading="lazy" />
-      <img src="assets/screenshots/03-hst.png" alt="Half-square triangle calculator" width="1080" height="1920" loading="lazy" />
-      <img src="assets/screenshots/04-metric.png" alt="Metric units support" width="1080" height="1920" loading="lazy" />
-      <img src="assets/screenshots/05-premium.png" alt="Premium features overview" width="1080" height="1920" loading="lazy" />
+      <picture>
+        <source srcset="assets/screenshots/01-binding.webp" type="image/webp" />
+        <img src="assets/screenshots/01-binding.png" alt="Binding calculator" width="1080" height="1920" loading="lazy" />
+      </picture>
+      <picture>
+        <source srcset="assets/screenshots/02-backing.webp" type="image/webp" />
+        <img src="assets/screenshots/02-backing.png" alt="Backing calculator" width="1080" height="1920" loading="lazy" />
+      </picture>
+      <picture>
+        <source srcset="assets/screenshots/03-hst.webp" type="image/webp" />
+        <img src="assets/screenshots/03-hst.png" alt="Half-square triangle calculator" width="1080" height="1920" loading="lazy" />
+      </picture>
+      <picture>
+        <source srcset="assets/screenshots/04-metric.webp" type="image/webp" />
+        <img src="assets/screenshots/04-metric.png" alt="Metric units support" width="1080" height="1920" loading="lazy" />
+      </picture>
+      <picture>
+        <source srcset="assets/screenshots/05-premium.webp" type="image/webp" />
+        <img src="assets/screenshots/05-premium.png" alt="Premium features overview" width="1080" height="1920" loading="lazy" />
+      </picture>
     </div>
   </div>
 </section>
