@@ -284,6 +284,46 @@ section.alt .about-card { background: var(--bg); }
   background: #fffaf3;
 }
 
+.premium-heading {
+  margin: 32px 0 18px;
+  font-size: 16px;
+  color: var(--accent-dark);
+}
+
+/* Changelog */
+.changelog {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.changelog-item {
+  display: flex;
+  gap: 20px;
+  padding: 18px 0;
+  border-top: 1px solid var(--line);
+}
+
+.changelog-item:first-child { border-top: none; }
+
+.changelog-version {
+  flex-shrink: 0;
+  width: 64px;
+  font-weight: 700;
+  color: var(--accent-dark);
+}
+
+.changelog-item h3 {
+  margin: 0 0 4px;
+  font-size: 15.5px;
+}
+
+.changelog-item p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 14.5px;
+}
+
 /* Screenshots */
 .shot-scroll {
   display: flex;
