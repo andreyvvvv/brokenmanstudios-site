@@ -5,10 +5,25 @@ It's just HTML, CSS, and images.
 
 ## Deploying brokenmanstudios.com (this project's live site)
 
+**Current host (since 2026-08-20):** a dedicated VPS (`217.154.231.122`)
+running only this site — nginx, UFW (22/80/443 only), fail2ban,
+unattended-upgrades, key-only SSH (root login and password auth both
+disabled), Let's Encrypt via certbot with nginx's own auto-configured
+redirect and auto-renewal (`certbot renew --dry-run` verified working).
+
+**Previous/fallback host:** the Austria VPS also still has this site
+deployed and configured (nginx + HAProxy SNI routing, its own Let's
+Encrypt cert, auto-renewing). It is not attached to the domain right now
+— DNS points at the dedicated VPS above — but it is a working manual
+fallback. To fail over: log into the domain registrar (Porkbun) and point
+`brokenmanstudios.com` / `www` A records back at the Austria VPS's IP,
+then redeploy current `main` there if its copy has drifted (see "Local
+deploy script" below — same script, different target).
+
 A local-only `deploy.sh` (gitignored — see below) fetches `origin/main`,
 exports it as a clean tarball (so Windows CRLF line endings from
 `core.autocrlf` never leak into the deploy — see `.gitattributes`), rsyncs
-it into the web root on the VPS over the existing SSH key, and verifies
+it into the web root on the target VPS over an SSH key, and verifies
 the live site matches `origin/main` byte-for-byte before finishing.
 
 Only `index.html`, `privacy.html`, `robots.txt`, `sitemap.xml`,
@@ -16,15 +31,16 @@ Only `index.html`, `privacy.html`, `robots.txt`, `sitemap.xml`,
 `README.md`, and `SEO.md` stay in the repo and are never copied to the
 web root.
 
-**`deploy.sh` is intentionally not committed** (see `.gitignore`): this
-repo is public, and the script contains the real VPS IP, SSH port, and
-username, which the owner prefers not to publish. Keep the script local
-to the workstation(s) that need it; ask whoever set it up for a copy
-rather than recreating it with real values committed to git.
+**`deploy.sh` is intentionally not committed** (see `.gitignore`): it
+contains SSH connection specifics the owner prefers to keep off a public
+repo, even though the target IP is trivially discoverable via DNS anyway.
+Keep the script local to the workstation(s) that need it; ask whoever set
+it up for a copy rather than recreating it with real values committed to
+git.
 
 This is deliberately a manual, one-command step, not a GitHub Actions
 auto-deploy on push — the owner decided against adding a standing deploy
-credential to this shared VPS. Push to `main`, then run the local deploy
+credential to either VPS. Push to `main`, then run the local deploy
 script when ready to go live.
 
 ## Files

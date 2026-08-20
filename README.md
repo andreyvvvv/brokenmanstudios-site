@@ -23,8 +23,9 @@ Official website and privacy policy for **Broken Man Studios** and **QuiltMath**
 
 ## Deployment
 
-Deployed to Austria VPS via Nginx + HAProxy on `brokenmanstudios.com` with Let's Encrypt SSL.
-See [DEPLOY.md](DEPLOY.md) for details.
+Deployed to a dedicated VPS via Nginx on `brokenmanstudios.com` with Let's Encrypt SSL
+(auto-renewing). Moved 2026-08-20 to an isolated VPS dedicated to this site only; the
+previous host is kept configured as a manual fallback — see [DEPLOY.md](DEPLOY.md) for details.
 
 ## SEO
 
