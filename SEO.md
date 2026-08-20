@@ -75,51 +75,32 @@ Last updated: 2026-08-20.
   correctness. The schema is still valid and harmless to keep (helps
   Google's semantic understanding of the page even without a rich result).
 
-## In progress — Google Ads (paused 2026-08-20, resume here)
+## Google Ads — resolved elsewhere (superseding the entry below)
 
-Goal: set up a Google Ads account/campaign structure for QuiltMath at
-**zero cost** — targeting, keyword research, ad copy drafts only. No
-payment method is to be entered by the agent; actually activating spend
-is the owner's own action in Google's billing UI.
+A parallel session on 2026-08-20 finished this: created a clean new Ads
+account **"Broken Man Studios" (429-018-5898)**, correctly left the old
+blocked account (390-623-4129) alone, entered quilting-calculator keywords
+and geo-targeting. **Project owner then decided to pause Google Ads
+entirely** — paid acquisition isn't a priority before the app leaves
+Closed testing. No spend occurred. See `docs/OUTREACH_LOG.md` in the
+QuiltMath app repo (2026-08-20 entries) for the full record. Nothing left
+to do here unless the owner decides to revisit paid ads later.
 
-Status when paused:
-- Signed into Google Ads (ads.google.com) with the account owner's Google
-  login. There is already an **existing Ads account, ID 390-623-4129**,
-  but it is **deactivated/blocked** ("Ваш аккаунт неактивен... аккаунт
-  был заблокирован") with zero campaigns in it — reason for the block
-  was not investigated.
-- Owner decided (2026-08-20): do **not** try to reactivate 390-623-4129
-  (unknown block history, could be an old unrelated account). Instead,
-  **create a brand-new Ads account dedicated to QuiltMath / Broken Man
-  Studios.**
-- Was in the middle of locating the "create new account" flow in the
-  Ads UI when the session ended (account-switcher isn't the "Все
-  кампании" campaign filter dropdown at top-left — that's a decoy;
-  `.../aw/accountchooser` is a dead URL, 404). Next attempt: use the
-  small account/profile control near the top-right avatar, or
-  Google's guided "Jetzt loslegen" / "Fortfahren" flow from
-  ads.google.com's landing page again and choose "create a new account"
-  explicitly rather than continuing into the existing blocked one.
-- Nothing financial was touched: no payment method entered, no card
-  details viewed or typed, no campaign launched or budget set.
+<details>
+<summary>Superseded: this session's own (incomplete, abandoned) Ads attempt</summary>
 
-Plan once the new account exists (still free, still paused):
-1. Keyword research via Keyword Planner for terms like "quilt binding
-   calculator", "how much fabric for quilt backing", "half square
-   triangle calculator", "flying geese calculator quilt".
-2. Draft a Search campaign structure (ad groups per calculator: Binding,
-   Backing, HST, Flying Geese/Premium) with headlines/descriptions
-   pulled from the site copy already written in `index.html`.
-3. Set geographic/language targeting per owner's target market.
-4. Leave the campaign in **paused / draft** status. Do not add billing
-   or click anything that activates spend — that step needs the owner
-   present to enter their own payment details.
-5. Log the finished draft here with account ID and campaign name so the
-   owner can review and decide whether/when to fund and launch it.
+Was mid-way through locating the "create new account" flow in the Ads UI
+when this session paused (account-switcher isn't the "Все кампании"
+campaign filter dropdown at top-left — that's a decoy; `.../aw/accountchooser`
+is a dead URL, 404). Nothing financial was touched. Superseded by the
+parallel session's completed work above — no need to resume this.
+
+</details>
 
 ## Open / next
 
-- Finish Google Ads setup per the plan above.
+- Bing Webmaster Tools — approved by owner, only remaining free-channel
+  marketing item, not yet set up (per `docs/OUTREACH_LOG.md` 2026-08-20).
 - Consider adding `hreflang`/localized copy if QuiltMath ever ships a
   non-English store listing.
 - Once QuiltMath leaves closed testing, simplify the "How to try QuiltMath"
