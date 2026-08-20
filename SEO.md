@@ -1,6 +1,6 @@
 # SEO work log
 
-Last updated: 2026-08-19.
+Last updated: 2026-08-20.
 
 ## Done
 
@@ -75,12 +75,51 @@ Last updated: 2026-08-19.
   correctness. The schema is still valid and harmless to keep (helps
   Google's semantic understanding of the page even without a rich result).
 
+## In progress — Google Ads (paused 2026-08-20, resume here)
+
+Goal: set up a Google Ads account/campaign structure for QuiltMath at
+**zero cost** — targeting, keyword research, ad copy drafts only. No
+payment method is to be entered by the agent; actually activating spend
+is the owner's own action in Google's billing UI.
+
+Status when paused:
+- Signed into Google Ads (ads.google.com) with the account owner's Google
+  login. There is already an **existing Ads account, ID 390-623-4129**,
+  but it is **deactivated/blocked** ("Ваш аккаунт неактивен... аккаунт
+  был заблокирован") with zero campaigns in it — reason for the block
+  was not investigated.
+- Owner decided (2026-08-20): do **not** try to reactivate 390-623-4129
+  (unknown block history, could be an old unrelated account). Instead,
+  **create a brand-new Ads account dedicated to QuiltMath / Broken Man
+  Studios.**
+- Was in the middle of locating the "create new account" flow in the
+  Ads UI when the session ended (account-switcher isn't the "Все
+  кампании" campaign filter dropdown at top-left — that's a decoy;
+  `.../aw/accountchooser` is a dead URL, 404). Next attempt: use the
+  small account/profile control near the top-right avatar, or
+  Google's guided "Jetzt loslegen" / "Fortfahren" flow from
+  ads.google.com's landing page again and choose "create a new account"
+  explicitly rather than continuing into the existing blocked one.
+- Nothing financial was touched: no payment method entered, no card
+  details viewed or typed, no campaign launched or budget set.
+
+Plan once the new account exists (still free, still paused):
+1. Keyword research via Keyword Planner for terms like "quilt binding
+   calculator", "how much fabric for quilt backing", "half square
+   triangle calculator", "flying geese calculator quilt".
+2. Draft a Search campaign structure (ad groups per calculator: Binding,
+   Backing, HST, Flying Geese/Premium) with headlines/descriptions
+   pulled from the site copy already written in `index.html`.
+3. Set geographic/language targeting per owner's target market.
+4. Leave the campaign in **paused / draft** status. Do not add billing
+   or click anything that activates spend — that step needs the owner
+   present to enter their own payment details.
+5. Log the finished draft here with account ID and campaign name so the
+   owner can review and decide whether/when to fund and launch it.
+
 ## Open / next
 
-- Google Ads account — set up for free (targeting/keyword research only,
-  no spend, no payment method entered by the agent). Payment setup and
-  actually launching a paid campaign is the owner's call and requires
-  entering billing details directly in Google's UI.
+- Finish Google Ads setup per the plan above.
 - Consider adding `hreflang`/localized copy if QuiltMath ever ships a
   non-English store listing.
 - Once QuiltMath leaves closed testing, simplify the "How to try QuiltMath"
