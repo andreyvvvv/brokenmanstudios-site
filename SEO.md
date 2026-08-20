@@ -97,10 +97,18 @@ parallel session's completed work above — no need to resume this.
 
 </details>
 
+## Bing Webmaster Tools — set up, verified 2026-08-20
+
+Confirmed live in the Bing Webmaster Tools dashboard: property
+`brokenmanstudios.com` registered, `sitemap.xml` submitted and processed
+— status **Success**, 0 errors, 0 warnings, 2 URLs discovered. "Search
+Performance"/"No pages found" is expected at this stage — Bing's crawl
+of the discovered URLs typically lands within 24–48h of a fresh sitemap
+submission, separate from (and slower than) sitemap acceptance itself.
+Nothing further to do; check back in a day or two if curious.
+
 ## Open / next
 
-- Bing Webmaster Tools — approved by owner, only remaining free-channel
-  marketing item, not yet set up (per `docs/OUTREACH_LOG.md` 2026-08-20).
 - Consider adding `hreflang`/localized copy if QuiltMath ever ships a
   non-English store listing.
 - Once QuiltMath leaves closed testing, simplify the "How to try QuiltMath"
