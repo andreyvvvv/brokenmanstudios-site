@@ -2,3 +2,8 @@
 Thumbs.db
 *.tmp
 *.bak
+
+# Local-only: contains the real VPS IP/port/user, which must not be
+# published in this public repo (the same VPS also hosts personal VPN
+# infrastructure). Keep this file on the workstation only.
+deploy.sh

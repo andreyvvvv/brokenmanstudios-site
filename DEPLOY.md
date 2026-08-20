@@ -3,6 +3,30 @@
 This is a fully static site — no build step, no server-side code, no dependencies.
 It's just HTML, CSS, and images.
 
+## Deploying brokenmanstudios.com (this project's live site)
+
+A local-only `deploy.sh` (gitignored — see below) fetches `origin/main`,
+exports it as a clean tarball (so Windows CRLF line endings from
+`core.autocrlf` never leak into the deploy — see `.gitattributes`), rsyncs
+it into the web root on the VPS over the existing SSH key, and verifies
+the live site matches `origin/main` byte-for-byte before finishing.
+
+Only `index.html`, `privacy.html`, `robots.txt`, `sitemap.xml`,
+`google851ba87864f359aa.html`, and `assets/` are deployed — `DEPLOY.md`,
+`README.md`, and `SEO.md` stay in the repo and are never copied to the
+web root.
+
+**`deploy.sh` is intentionally not committed** (see `.gitignore`): this
+repo is public, and the script contains the real VPS IP, SSH port, and
+username, which the owner prefers not to publish. Keep the script local
+to the workstation(s) that need it; ask whoever set it up for a copy
+rather than recreating it with real values committed to git.
+
+This is deliberately a manual, one-command step, not a GitHub Actions
+auto-deploy on push — the owner decided against adding a standing deploy
+credential to this shared VPS. Push to `main`, then run the local deploy
+script when ready to go live.
+
 ## Files
 
 ```
