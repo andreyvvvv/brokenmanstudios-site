@@ -42,9 +42,10 @@ Last updated: 2026-08-20.
 
 ## Explicitly not done — and why
 
-- **Google Analytics / any tracking script on the site.** The site's own
-  copy promises "no ads, no analytics" for the app, and the studio's whole
-  pitch is privacy. Adding GA here would contradict that message. If
+- **Google Analytics / any tracking script on the site.** The site's current
+  QuiltMath copy promises "no ads, no analytics" for the app. This is a
+  product-specific statement, not the positioning of Broken Man Studios.
+  Adding GA here would still contradict the current QuiltMath page. If
   traffic data is ever needed, use Search Console's own performance report
   (impressions/clicks/queries, no visitor tracking) instead.
 - **Play Console → Ссылки на контент → Добавить домен** (Digital Asset
