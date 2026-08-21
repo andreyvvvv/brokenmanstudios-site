@@ -26,7 +26,7 @@ exports it as a clean tarball (so Windows CRLF line endings from
 it into the web root on the target VPS over an SSH key, and verifies
 the live site matches `origin/main` byte-for-byte before finishing.
 
-Only `index.html`, `privacy.html`, `robots.txt`, `sitemap.xml`,
+Only `index.html`, `privacy.html`, `studio-privacy.html`, `updates.html`, `robots.txt`, `sitemap.xml`,
 `google851ba87864f359aa.html`, and `assets/` are deployed — `DEPLOY.md`,
 `README.md`, and `SEO.md` stay in the repo and are never copied to the
 web root.
@@ -47,9 +47,11 @@ script when ready to go live.
 
 ```
 index.html                        — homepage
-privacy.html                      — privacy policy page
+privacy.html                      — QuiltMath privacy policy page
+studio-privacy.html               — website and social presence privacy notice
+updates.html                      — studio journal and project updates
 robots.txt                        — crawl directives, points to sitemap.xml
-sitemap.xml                       — lists index.html and privacy.html
+sitemap.xml                       — lists all public HTML pages
 google851ba87864f359aa.html       — Search Console ownership file, must stay published
 assets/style.css                  — all styling (linked with a ?v= cache-busting query)
 assets/screenshots/                — the 5 app screenshots, PNG + WebP (<picture> with WebP source, PNG fallback)
