@@ -330,6 +330,19 @@ section.alt .about-card { background: var(--bg); }
   margin-left: 6px;
 }
 
+.coming-up-cta {
+  margin: 18px 0 0;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+  color: var(--ink-soft);
+  font-size: 13.5px;
+}
+
+.coming-up-cta a {
+  color: var(--accent-dark);
+  font-weight: 700;
+}
+
 .changelog-item p {
   margin: 0;
   color: var(--ink-soft);
