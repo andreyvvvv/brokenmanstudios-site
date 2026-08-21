@@ -14,15 +14,17 @@ Official website and privacy policy for **Broken Man Studios** and **QuiltMath**
 ├── privacy.html                      # Privacy Policy
 ├── studio-privacy.html               # Website and social presence privacy notice
 ├── updates.html                      # Studio journal and project updates
+├── updates/                          # Individual Studio journal articles
 ├── robots.txt                        # Crawl directives
 ├── sitemap.xml                       # Sitemap for all public HTML pages
 ├── google851ba87864f359aa.html       # Google Search Console ownership file — do not delete
 ├── DEPLOY.md                         # Deployment notes
 ├── SEO.md                            # SEO work log and open items
-└── assets/
+├── assets/
     ├── style.css                     # Styling
     ├── logo.jpg / logo.png / logo.webp
-    └── screenshots/                  # App screenshots (PNG + WebP)
+    ├── screenshots/                  # App screenshots (PNG + WebP)
+    └── updates/                      # Studio-journal artwork
 ```
 
 ## Deployment

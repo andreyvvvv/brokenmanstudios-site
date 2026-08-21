@@ -26,7 +26,7 @@ exports it as a clean tarball (so Windows CRLF line endings from
 it into the web root on the target VPS over an SSH key, and verifies
 the live site matches `origin/main` byte-for-byte before finishing.
 
-Only `index.html`, `privacy.html`, `studio-privacy.html`, `updates.html`, `robots.txt`, `sitemap.xml`,
+Only `index.html`, `privacy.html`, `studio-privacy.html`, `updates.html`, `updates/`, `robots.txt`, `sitemap.xml`,
 `google851ba87864f359aa.html`, and `assets/` are deployed — `DEPLOY.md`,
 `README.md`, and `SEO.md` stay in the repo and are never copied to the
 web root.
@@ -50,6 +50,7 @@ index.html                        — homepage
 privacy.html                      — QuiltMath privacy policy page
 studio-privacy.html               — website and social presence privacy notice
 updates.html                      — studio journal and project updates
+updates/                          — individual Studio journal articles
 robots.txt                        — crawl directives, points to sitemap.xml
 sitemap.xml                       — lists all public HTML pages
 google851ba87864f359aa.html       — Search Console ownership file, must stay published

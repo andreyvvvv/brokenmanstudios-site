@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>How QuiltMath Checks the Math</title>
+<meta name="description" content="How QuiltMath separates calculator logic, tests edge cases and communicates practical quilting assumptions." />
+<link rel="canonical" href="https://brokenmanstudios.com/updates/how-quiltmath-checks-the-math.html" />
+<meta property="og:type" content="article" /><meta property="og:site_name" content="Broken Man Studios" /><meta property="og:title" content="How QuiltMath checks the math" /><meta property="og:description" content="Automated examples, edge cases, device checks and visible assumptions." /><meta property="og:url" content="https://brokenmanstudios.com/updates/how-quiltmath-checks-the-math.html" /><meta property="og:image" content="https://brokenmanstudios.com/assets/screenshots/03-hst.png" /><meta name="twitter:card" content="summary_large_image" />
+<link rel="icon" type="image/jpeg" href="../assets/logo.jpg" /><link rel="stylesheet" href="../assets/style.css?v=6" />
+</head>
+<body>
+<header class="site"><div class="wrap"><a href="/" class="brand"><img src="../assets/logo.jpg" alt="Broken Man Studios logo" class="brand-mark" /><span class="brand-text"><span class="studio">Broken Man Studios</span><span class="app">Studio journal</span></span></a><nav class="site"><a href="/">QuiltMath</a><a href="/updates.html">Updates</a><a href="/privacy.html">QuiltMath Privacy</a></nav></div></header>
+<main class="article-page"><article>
+  <header class="article-header"><p class="article-meta"><time datetime="2026-08-21">August 21, 2026</time> · Development note</p><h1>How QuiltMath checks the math</h1><p class="article-lead">A quilting calculator must show more than a number. It must make its construction method, rounding and limits understandable.</p></header>
+  <figure class="article-media"><img src="../assets/screenshots/03-hst.png" alt="QuiltMath half-square triangle calculator" width="1080" height="1920" /></figure>
+  <h2>Logic first, interface second</h2>
+  <p>The calculation functions are kept separate from the screen components. That makes it possible to verify the same formulas independently of buttons, typography or navigation.</p>
+  <h2>Examples and edge cases</h2>
+  <p>Automated checks cover representative calculator inputs, rounding boundaries, zero and invalid values, unit conversions and construction-specific requirements. PDF output is also checked to ensure it includes every supported calculator rather than only the currently visible screen.</p>
+  <h2>Assumptions stay visible</h2>
+  <p>Binding includes allowance for corners and joins. Fabric purchases round upward to practical increments. HST supports both exact and oversize-and-trim methods. Flying Geese validates the geometry expected by its four-at-a-time method. These choices are stated beside the relevant result.</p>
+  <h2>Device review still matters</h2>
+  <p>Automated checks cannot decide whether a label is easy to understand or whether a result is visually crowded. Release candidates are therefore reviewed on Android devices for layout, persistence, navigation and obvious calculation inconsistencies.</p>
+  <p>QuiltMath remains a planning tool: measure the finished quilt top, compare the result with the pattern and make a test unit before cutting all the fabric.</p>
+  <p class="article-back"><a href="/updates.html">← Back to Studio journal</a></p>
+</article></main>
+<footer class="site"><div class="wrap"><span>© 2026 Broken Man Studios</span><span><a href="/updates.html">Updates</a> · <a class="social-link" href="https://www.facebook.com/profile.php?id=61593818901510" target="_blank" rel="noopener">Facebook</a> · <a href="/privacy.html">QuiltMath Privacy</a> · <a href="mailto:contact@brokenmanstudios.com">Contact</a></span></div></footer>
+</body></html>
