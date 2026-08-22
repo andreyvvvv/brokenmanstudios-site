@@ -55,7 +55,7 @@ robots.txt                        — crawl directives, points to sitemap.xml
 sitemap.xml                       — lists all public HTML pages
 google851ba87864f359aa.html       — Search Console ownership file, must stay published
 assets/style.css                  — all styling (linked with a ?v= cache-busting query)
-assets/screenshots/                — the 5 app screenshots, PNG + WebP (<picture> with WebP source, PNG fallback)
+assets/screenshots/                — current 8-image Basic/Premium app set plus historical article screenshots
 ```
 
 ## Cache-busting after a CSS change

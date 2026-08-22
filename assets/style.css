@@ -522,6 +522,23 @@ section.alt .about-card { background: var(--bg); }
 }
 
 /* Screenshots */
+.screenshot-group-title {
+  margin: 26px 0 6px;
+  font-size: 18px;
+}
+
+.premium-screenshot-title {
+  color: var(--accent);
+  margin-top: 34px;
+}
+
+.screenshot-group-copy {
+  max-width: 720px;
+  margin: 0 0 8px;
+  color: var(--ink-soft);
+  font-size: 14.5px;
+}
+
 .shot-scroll {
   display: flex;
   gap: 18px;
